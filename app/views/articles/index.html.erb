@@ -1,11 +1,12 @@
-<h1>Recent Articles</h1>
+<div class="container my-4 d-flex align-items-center flex-column">
+  <h1>Recent Articles</h1>
 
-<%= link_to "Post new article", new_article_path %>
-
-<ul>
-  <% @articles.each do |article| %>
-    <li>
-      <%= link_to article.title, article_path(article) %>
-    </li>
-  <% end %>
-</ul>
+  <ul class="list-inline">
+    <% @articles.each do |article| %>
+      <li class="list-item-main">
+        <%= link_to article.title, article_path(article) %>
+      </li>
+      <li class="list-item-content"><%= article.content %></li>
+    <% end %>
+  </ul>
+</div>

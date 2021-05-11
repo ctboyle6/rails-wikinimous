@@ -1,3 +1,39 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.header {
+  background-color: #e7e1d9;
+  height: 50px;
+}
+
+.header > h1, a {
+  font-weight: lighter;
+}
+
+.header > h1 {
+  font-size: 32px;
+  color: #2e2e2d;
+}
+
+.header a {
+  text-decoration: none;
+  color: grey;
+  font-size: 18px;
+}
+
+.container > h1 {
+  font-size: 32px;
+  color: #c92a7f;
+}
+
+.list-item-main > a {
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #86897c;
+}
+
+.list-item-content {
+  font-size: 16px;
+  font-weight: lighter;
+}

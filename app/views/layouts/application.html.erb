@@ -11,6 +11,10 @@
   </head>
 
   <body>
+    <div class="header border-bottom rounded p-3 d-flex justify-content-between align-items-center">
+      <h1>Wikinimous</h1>
+      <%= link_to "Post new article", new_article_path %>
+    </div>
     <%= yield %>
   </body>
 </html>

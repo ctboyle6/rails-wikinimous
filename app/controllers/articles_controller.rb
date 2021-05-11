@@ -8,9 +8,16 @@ class ArticlesController < ApplicationController
   def show; end
 
   def new
+    @article = Article.new
   end
 
   def create
+    @article = Article.new(article_params)
+    if @article.save
+      redirect_to article_path(@article)
+    else
+      redirect_to new_article_path
+    end
   end
 
   def edit

@@ -1,6 +1,8 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap');
+
 .header {
   background-color: #e7e1d9;
   height: 50px;
@@ -22,8 +24,11 @@
 }
 
 .container > h1 {
-  font-size: 32px;
-  color: #c92a7f;
+  font-size: 40px;
+  color: #009935;
+  font-family: 'Roboto';
+  box-shadow: inset 0px -20px 4px 0px rgba(220, 240, 220, 0.3);
+  border-radius: 4px
 }
 
 .list-item-main > a {
@@ -31,6 +36,7 @@
   font-weight: bold;
   text-decoration: none;
   color: #86897c;
+  font-family: 'Roboto', italic;
 }
 
 .list-item-content {
